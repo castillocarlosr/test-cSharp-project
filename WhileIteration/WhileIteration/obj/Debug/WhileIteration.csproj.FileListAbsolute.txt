@@ -1,0 +1,2 @@
+C:\Users\casti\coding\myCodesCRC\test-cSharp-project\WhileIteration\WhileIteration\obj\Debug\WhileIteration.csprojAssemblyReference.cache
+C:\Users\casti\coding\myCodesCRC\test-cSharp-project\WhileIteration\WhileIteration\obj\Debug\WhileIteration.csproj.CoreCompileInputs.cache
