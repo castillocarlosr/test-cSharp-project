@@ -20,7 +20,6 @@ namespace WhileIteration
         private static bool MainMenu()
         {
             Console.Clear();
-            //this will work on windows console
             Console.WriteLine("Choose a valid option:");
             Console.WriteLine("1) Print Numbers");
             Console.WriteLine("2) Guessing random numbers game");
@@ -42,10 +41,10 @@ namespace WhileIteration
             }
             else
             {
+                Console.WriteLine("Oh no.....Looks like you didn't type 1, 2, or 3.");
                 return true;
             }
-
-        
+        }
 
             private static void GuessingGame()
             {
@@ -61,18 +60,17 @@ namespace WhileIteration
                 do
                 {
                     Console.WriteLine("Guess a number between 1 and 12: ");
-                    string result = Console ReadLine();
+                    string result = Console.ReadLine();
                     guesses++;
                     if (result == randomNumber.ToString())
-                        incorrect == false;
+                        incorrect = false;
                     else
                         Console.WriteLine("You have chosen POORLY.....");
-                } while (incorrect){
-                    Console.WriteLine("You have choosen WISELY!  It took you {0} guesses.", guesses);
+                }  while (incorrect);
+                Console.WriteLine("You have choosen WISELY!  It took you {0} guesses.", guesses);
+                Console.WriteLine("Press 'return' or 'enter' key to continue.");
 
-                    Console.ReadLine();
-                }
-
+                Console.ReadLine();
             }
 
             private static void PrintNumbers()
@@ -82,7 +80,7 @@ namespace WhileIteration
                 Console.Write("Type a number.  Any number: ");
                 int result = int.Parse(Console.ReadLine());
                 int counter = 1;
-                while (counter< result + 1)
+                while (counter < result + 1)
                 {
                     Console.Write(counter);
                     Console.Write("-");
@@ -90,6 +88,6 @@ namespace WhileIteration
                 }
                 Console.ReadLine();
             }
-        }
+        
     }
 }
