@@ -49,7 +49,7 @@ namespace WhileIteration
             private static void GuessingGame()
             {
                 Console.Clear();
-                Console.WriteLine("Guessing numbers game! YAY!?");
+                Console.WriteLine("Guessing numbers game! \"YAY!?\"");
 
                 Random myRandom = new Random();
                 int randomNumber = myRandom.Next(1, 13);
