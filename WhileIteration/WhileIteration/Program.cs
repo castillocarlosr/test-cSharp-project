@@ -37,11 +37,12 @@ namespace WhileIteration
             }
             else if (result == "3")
             {
+                Console.WriteLine("Bye bye.");
                 return false;
             }
             else
             {
-                Console.WriteLine("Oh no.....Looks like you didn't type 1, 2, or 3.");
+                OtherKeyPressed();
                 return true;
             }
         }
@@ -87,6 +88,13 @@ namespace WhileIteration
                     counter++;
                 }
                 Console.ReadLine();
+            }
+
+            private static void OtherKeyPressed()
+            {
+            Console.Clear();
+            Console.WriteLine("Oh no.....Looks like you didn't type 1, 2, or 3.");
+            Console.ReadLine();
             }
         
     }
