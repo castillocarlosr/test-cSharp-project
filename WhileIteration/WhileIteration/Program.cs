@@ -24,6 +24,7 @@ namespace WhileIteration
             Console.WriteLine("1) Print Numbers");
             Console.WriteLine("2) Guessing random numbers game");
             Console.WriteLine("3) Exit");
+            Console.WriteLine("");
             string result = Console.ReadLine();
             if (result == "1")
             {
@@ -39,7 +40,7 @@ namespace WhileIteration
             {
                 Console.WriteLine("Bye bye.");
                 return false;
-            }
+            } 
             else
             {
                 OtherKeyPressed();
@@ -96,6 +97,8 @@ namespace WhileIteration
             Console.WriteLine("Oh no.....Looks like you didn't type 1, 2, or 3.");
             Console.ReadLine();
             }
+
+        
         
     }
 }
